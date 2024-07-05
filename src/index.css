@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  font-family: sans-serif;
 }
 
 main {
@@ -40,4 +42,53 @@ main {
   height: 100vh;
   background-color: aliceblue;
   margin-top: 50px;
+  background-color: pink;
+}
+
+.sidebar-header{
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.sidebar-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.sidebar-profile {
+  margin-bottom: 32px;
+}
+
+
+.sidebar-profile h2, .sidebar-items h2{
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.sidebar-items ul{
+  list-style: none;
+}
+
+.sidebar-links {
+  /* margin: 32px 0px; */
+  margin-bottom: 14px;
+}
+
+.sidebar-links a{
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+}
+
+/* ICON */
+.icon {
+  position: relative;
+  top: 3px;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
