@@ -6,8 +6,15 @@
   font-family: sans-serif;
 }
 
+:root {
+  --primary-color: #f2f2f2;
+  --secondary-color: #ffff;
+  --tertiary-color: #000000;
+  --quaternary-color: #D6d6d6
+}
+
 main {
-  background-color: red;
+  background-color: var(--primary-color);
   width: calc(100% - 250px);
   height: calc(100vh);
   margin-left: 250px;
@@ -31,7 +38,7 @@ main {
   justify-content: start;
   align-items: center;
   padding-left: 100px;
-  background-color: aliceblue;
+  background-color: var(--secondary-color);
 }
 
 /* Sidebar */
@@ -40,9 +47,11 @@ main {
   position: fixed;
   width: 250px;
   height: 100vh;
-  background-color: aliceblue;
   margin-top: 50px;
-  background-color: pink;
+  background-color: var(--secondary-color);
+  display: grid;
+  place-items: center;
+  align-content: center;
 }
 
 .sidebar-header{
@@ -51,20 +60,23 @@ main {
 }
 
 .sidebar-container{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-width: 100%;
-  min-height: 100%;
+  padding: 0 32px;
 }
 
 .sidebar-profile {
   margin-bottom: 32px;
 }
 
+.sidebar-profile a {
+  text-decoration: none;
+  color: var(--tertiary-color);
+}
 
+.sidebar-profile a > .icon {
+  margin-left: 4px;
+}
 .sidebar-profile h2, .sidebar-items h2{
+  font-size: 16px;
   text-transform: uppercase;
   margin-bottom: 16px;
 }
